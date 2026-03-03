@@ -1,0 +1,229 @@
+ !DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            background-color: rgb(43, 5, 23);
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+        nav a{
+            color: white;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover{
+            color: rgb(165, 96, 107);
+            transition: scale(1.1);
+        }
+        .a{
+            font-size: 24px;
+        }
+        .b{
+            background: url(welcome.jpg) no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            display: flex;
+        }
+        .c{
+            font-size: 60px;
+            background-color: rgba(0,0,0,0.5);
+            padding: 30px;
+            border-radius: 20px;
+        }
+        #about{
+            padding: 40px;
+            background-color: white;
+            margin-bottom: 20px;
+            border-left: 20px solid gray;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        #Service{
+            padding: 40px;
+            background-color: white;
+            margin-bottom: 20px;
+            border-left: 20px solid gray;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        #projects{
+            padding: 40px;
+            background-color: white;
+            margin-bottom: 20px;
+            border-left: 20px solid gray;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        #contact{
+            padding: 40px;
+            background-color: white;
+            margin-bottom: 20px;
+            border-left: 20px solid gray;
+            animation: fadeInUp 1s ease-in-out;
+        }
+       
+       
+        h2{
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: gray;
+        }
+        p{
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        ul{
+            margin-left: 15px;
+            list-style-type: square;
+        }
+
+        @keyframes fadeInUp{
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        #contact{
+            background-color: rgb(49, 2, 61);
+            color: white;
+            padding: 30px;
+        }
+        .form{
+            max-width: 500px;
+            margin: auto;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 10px;
+        }
+        button{
+            background-color: rgb(248, 228, 47);
+            color: rgba(128, 128, 128, 0.829);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover{
+            background-color: #222222d3;
+        }
+        .f{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-color: #222222d3;
+            color: white;
+            padding: 20px;
+        }
+ </style>
+   <header>
+        <h1 class="a">JENSIKA ROBERT</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#Service">Service</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="b">
+        <h2 class="c">Welcome</h2>
+    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Charumathi, a passionate full-stack developer. I love building websites using HTML, CSS, JavaScript, and backend tools like Spring Boot and MySQL.</p>
+        <p>I'm currently preparing for the PGTRP exam and improving my communication and coding skills every day.</p>
+        <ul>
+            <li>Strong knowledge in Mathematics</li>
+            <li>Dedicated Learner</li>
+            <li>Enjoy watching love movies</li>
+        </ul>
+    </section>
+    <section id="Service">
+        <h2>Service</h2>
+        <p>I offer the following services:</p>
+        <ul>
+            <li>Web Design (Responsive + Clean UI)</li>
+            <li>Frontend Development with React</li>
+            <li>Backend APIs with Java Spring Boot</li>
+            <li>Basic SEO Optimization</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my recent projects:</p>
+        <ul>
+            <li>Intranet Portal - A two-role login system with admin/user view</li>
+            <li>Student Manager - CRUD app with Spring Boot + React</li>
+            <li>My Portfolio - This current animated site!</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="" class="form">
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="Your Name" required></td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Your Email" required></td>
+                </tr>
+                <tr>
+                    <td><textarea rows="6" placeholder="Your Message" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Send Message</button></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+   
+    <footer class="f">
+        <center>
+        <p>&copy; Jensika ights Reserved</p>
+        </center>
+    </footer>
+                   
+
+    
+</body>
+</html>
